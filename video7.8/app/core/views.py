@@ -8,4 +8,4 @@ def myfirstview(request):
     data = {
         'name': 'Adan'
     }
-    return JsonResponse(data)
+    return render(request, 'index.html', data)
